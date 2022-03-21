@@ -1,0 +1,16 @@
+﻿<Window x:Class="FlashDefender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FleshDefender"
+        mc:Ignorable="d"
+        Title="FlashDefender" Height="350" ResizeMode="CanMinimize" Width="725" Icon="кирпич 41127.jpg">
+    <Grid>
+        <ListBox x:Name="listBoxLOG" FontSize="11" HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="523"/>
+        <Button x:Name="btnClear" Content="Очистить" FontSize="12" HorizontalAlignment="Left" Margin="533,284,0,0" VerticalAlignment="Top" Width="80" Height="25" Click="btnClear_Click"/>
+        <Button x:Name="btnStart" Content="Пуск" FontSize="12" HorizontalAlignment="Left" Margin="538,10,0,0" VerticalAlignment="Top" Width="80" Height="25" Click="btnStart_Click"/>
+        <Button x:Name="btnStop" Content="Остановить" FontSize="12" HorizontalAlignment="Left" Margin="623,10,0,0" VerticalAlignment="Top" Width="80" Height="25" Click="btnStop_Click" IsEnabled="False"/>
+
+    </Grid>
+</Window>
