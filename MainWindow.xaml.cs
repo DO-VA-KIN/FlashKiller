@@ -89,7 +89,8 @@ namespace FlashDefender
                             foreach (FileInfo fInfo in allfiles)
                                 fInfo.Delete();
                             foreach (DirectoryInfo directory in alldir)
-                                directory.Delete(true);
+                                if (directory.Name != "System Volume Information")
+                                    directory.Delete(true);
 
                             str = drive.Name + " полностью очищен, всего наилучшего";
                             listBoxLOG.Items.Add(str);
